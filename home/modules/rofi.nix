@@ -9,7 +9,7 @@ in
 
   config = lib.mkIf cfg.enable {
     home.packages = [
-      pkgs.rofi-wayland
+      pkgs.rofi
     ];
 
     xdg.configFile."rofi".source =
