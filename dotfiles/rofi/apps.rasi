@@ -1,0 +1,64 @@
+* {
+    background-color: transparent;
+    text-color: #e5e7eb;
+    border-color: #3b82f6;
+}
+
+window {
+    width: 600px;
+
+    background-color: #1e232a;
+
+    border: 2px;
+    border-color: #3b82f6;
+
+    border-radius: 14px;
+    padding: 16px;
+}
+
+inputbar {
+    background-color: #252b34;
+
+    border-radius: 10px;
+    padding: 10px 14px;
+
+    margin-bottom: 12px;
+}
+
+entry {
+    background-color: transparent;
+    text-color: #f9fafb;
+}
+
+listview {
+    spacing: 5px;
+}
+
+element {
+    padding: 10px 12px;
+
+    border-radius: 8px;
+
+    background-color: transparent;
+    text-color: #e5e7eb;
+}
+
+element selected {
+    background-color: #2b3440;
+
+    border: 1px;
+    border-color: #3b82f6;
+
+    text-color: #ffffff;
+}
+
+listview {
+    lines: 9;
+    columns: 1;
+
+    spacing: 8px;
+
+    padding: 10px 0px 0px 0px;
+
+    scrollbar: false;
+}

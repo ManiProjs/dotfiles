@@ -1,0 +1,83 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+  "margin-top": 5,
+  "margin-left": 15,
+  "margin-right": 15,
+
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+
+  "hyprland/workspaces": {
+    "all-outputs": true,
+    "format": "{name}",
+    "persistent-workspaces": {
+      "*": 10
+    }
+  },
+
+  "modules-center": [
+    "hyprland/window"
+  ],
+
+  "modules-right": [
+    "clock",
+    "cpu",
+    "memory",
+    "temperature",
+    "network",
+    "pulseaudio",
+    "battery",
+    "tray",
+    "custom/media"
+  ],
+
+  "clock": {
+    "format": "{:%a %H:%M}"
+  },
+
+  "cpu": {
+    "format": " {usage}%"
+  },
+
+  "memory": {
+    "format": " {percentage}%"
+  },
+
+  "temperature": {
+    "critical-threshold": 85,
+    "format": " {temperatureC}°C"
+  },
+
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": " {capacity}%"
+  },
+
+  "network": {
+    "format-wifi": "󰖩 {essid}",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "󰖪"
+  },
+
+  "pulseaudio": {
+    "format": "󰕾 {volume}%",
+    "format-muted": "󰖁"
+  },
+
+  "tray": {
+    "spacing": 8
+  },
+
+  "custom/media": {
+    "format": "󰝚 {}",
+    "exec": "playerctl metadata --format '{{artist}} - {{title}}'",
+    "interval": 3,
+    "max-length": 30
+  }
+}

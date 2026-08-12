@@ -1,0 +1,158 @@
+* {
+    font: "JetBrainsMono Nerd Font 12";
+    background-color: transparent;
+    text-color: #e5e7eb;
+}
+
+/* =========================
+   MAIN WINDOW
+   ========================= */
+
+window {
+    width: 720px;
+    height: 520px;
+
+    background-color: #141419;
+
+    border: 1px;
+    border-color: #334155;
+
+    border-radius: 18px;
+
+    padding: 20px;
+}
+
+/* =========================
+   LAYOUT
+   ========================= */
+
+mainbox {
+    children: [
+        inputbar,
+        listview
+    ];
+}
+
+/* =========================
+   SEARCH
+   ========================= */
+
+inputbar {
+    background-color: #272730;
+
+    border: 1px;
+    border-color: #374151;
+
+    border-radius: 12px;
+
+    padding: 13px 16px;
+
+    margin-bottom: 16px;
+}
+
+prompt {
+    text-color: #60a5fa;
+    padding-right: 8px;
+}
+
+entry {
+    background-color: transparent;
+
+    text-color: #f8fafc;
+
+    placeholder: "Search applications...";
+    placeholder-color: #64748b;
+}
+
+/* =========================
+   RESULTS
+   ========================= */
+
+listview {
+    lines: 9;
+    columns: 1;
+
+    spacing: 5px;
+
+    scrollbar: false;
+}
+
+/* =========================
+   ITEMS
+   ========================= */
+
+element {
+    padding: 11px 14px;
+
+    border-radius: 10px;
+
+    background-color: transparent;
+
+    text-color: #cbd5e1;
+}
+
+element-icon {
+    size: 30px;
+
+    margin-right: 14px;
+}
+
+element-text {
+    vertical-align: 0.5;
+}
+
+/* =========================
+   SELECTED ITEM
+   ========================= */
+
+element selected {
+    background-color: #1e40af;
+
+    border: 1px;
+    border-color: #3b82f6;
+
+    text-color: #ffffff;
+}
+
+/* =========================
+   MESSAGE
+   ========================= */
+
+message {
+    padding: 12px;
+
+    text-color: #94a3b8;
+}
+
+/* =========================
+   MODES
+   ========================= */
+
+mode-switcher {
+    margin-top: 12px;
+}
+
+button {
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    background-color: #1f2937;
+}
+
+button selected {
+    background-color: #2563eb;
+
+    text-color: #ffffff;
+}
+
+listview {
+    lines: 9;
+    columns: 1;
+
+    spacing: 8px;
+
+    padding: 10px 0px 0px 0px;
+
+    scrollbar: false;
+}
